@@ -1,0 +1,964 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+   font-size:15.1px; 
+}
+
+
+
+
+
+
+
+@media screen and (width: 1360px) and (height: 768px) {
+  html {
+    font-size: 16px;
+
+
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (width: 1920px) and (height: 1080px) {
+  html {
+    font-size: 12.0px;
+  }
+  .progressbarcontainer{
+  top:20.9rem !important;
+  left:124rem !important; 
+  }
+  .categoryButton{
+  line-height: 40px !important;
+  }
+  #progressbar{
+  top:61.4rem !important;
+  left:82rem !important;
+  }
+}
+@media screen and (width: 1768px) and (height: 992px) {
+  html {
+    font-size: 11px;
+  }
+   .progressbarcontainer{
+  top:20.9rem !important;
+  left:124rem !important; 
+  }
+  .categoryButton{
+  line-height: 40px !important;
+  }
+  #progressbar{
+  top:61.4rem !important;
+  left:82rem !important;
+  }
+}
+@media screen and (width: 1680px) and (height: 1050px) {
+  html {
+    font-size: 10.4px;
+  }
+  .progressbarcontainer{
+  top:26.5rem !important;
+  left:124rem !important; 
+  }
+  .categoryButton{
+  line-height: 40px !important;
+  }
+  #progressbar{
+  top:67rem !important;
+  left:82rem !important;
+  }
+}
+@media screen and (width: 1600px) and (height: 1200px) {
+  html {
+    font-size: 10px;
+  }
+    .progressbarcontainer{
+  top:36rem !important;
+  left:124rem !important; 
+  }
+  .categoryButton{
+  line-height: 40px !important;
+  }
+  #progressbar{
+  top:76.2rem !important;
+  left:82rem !important;
+  }
+}
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 10px;
+  }
+      .progressbarcontainer{
+  top:27.2rem !important;
+  left:124rem !important; 
+  }
+  .categoryButton{
+  line-height: 35px !important;
+  }
+  #progressbar{
+  top:67.2rem !important;
+  left:82rem !important;
+  }
+}
+@media screen and (width: 1600px) and (height: 900px) {
+  html {
+    font-size: 10px;
+  }
+  .progressbarcontainer{
+  top:21rem !important;
+  left:124rem !important; 
+  }
+  .categoryButton{
+  line-height: 35px !important;
+  }
+  #progressbar{
+  top:61.2rem !important;
+  left:82rem !important;
+  }
+}
+@media screen and (width: 1366px) and (height: 768px) {
+  html {
+    font-size: 8px;
+
+  }
+   .progressbarcontainer{
+  top:24rem !important;
+  left:129rem !important; 
+  }
+  .categoryButton{
+  line-height: 30px !important;
+  }
+  #progressbar{
+  top:64.1rem !important;
+  left:85rem !important;
+  }
+}
+@media screen and (width: 1280px) and (height: 1024px) {
+   html {
+    font-size: 8.0px;
+
+  }
+     .progressbarcontainer{
+  top:40rem !important;
+  left:124rem !important; 
+  }
+  .categoryButton{
+  line-height: 30px !important;
+  }
+  #progressbar{
+  top:80.2rem !important;
+  left:82rem !important;
+  }
+}
+@media screen and (width: 1280px) and (height: 720px) {
+    html {
+    font-size: 8.2px;
+  }
+       .progressbarcontainer{
+  top:20rem !important;
+  left:122rem !important; 
+  }
+  .categoryButton{
+  line-height: 30px !important;
+  }
+  #progressbar{
+  top:60.2rem !important;
+  left:82rem !important;
+  }
+}
+
+@media screen and (width: 1024px) and (height: 768px) {
+  html {
+    font-size: 6.5px;
+  }
+        .progressbarcontainer{
+  top:34.9rem !important;
+  left:122rem !important; 
+  }
+  .categoryButton{
+  line-height: 25px !important;
+  }
+  #progressbar{
+  top:75.2rem !important;
+  left:82rem !important;
+  }
+}
+@media screen and (width: 800px) and (height: 600px) {
+  html {
+    font-size: 5.3px;
+  }
+        .progressbarcontainer{
+  top:32.2rem !important;
+  left:120rem !important; 
+  }
+  .categoryButton{
+  line-height: 25px !important;
+  }
+  #progressbar{
+  top:72.9rem !important;
+  left:79rem !important;
+  }
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./images/background.png");
+}
+.mainwrapper {
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 148rem;
+  height: 76rem;
+
+}
+.weaponWrapper {
+  position: absolute;
+  width: 45rem;
+  height: 55rem;
+  top: 20rem;
+  left: 0.8rem;
+  overflow: auto;
+  overflow-x: hidden;
+  direction: rtl;
+}
+.weaponWrapper::-webkit-scrollbar-track {
+  max-height: 1%;
+  height: 1%;
+  border-radius: 10px;
+}
+
+.weaponWrapper::-webkit-scrollbar {
+  width: 5px;
+  max-height: 1%;
+  height: 1%;
+}
+
+.weaponWrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  max-height: 1%;
+  height: 1%;
+  background-color: #008dff;
+}
+
+.weaponlist {
+  position: relative;
+  width: 44rem;
+  height: 13.5rem;
+
+  margin-top: 0.5rem;
+}
+.weaponback {
+  position: relative;
+
+  top: 1rem;
+  max-width: 46rem;
+  max-height: 18rem;
+  left: -7rem;
+  transform: scale(1.3);
+}
+.weaponbackground{
+  position: relative;
+
+  top: 1rem;
+  width: 46rem;
+  height: 13rem;
+  left: -1rem;
+  border:1px solid;
+  border-image : linear-gradient(-170deg, white 10%, #af261c00 30%, #af261c00 65%,white 100%) 10;
+  background-color: #193d4c5e;
+  transition:30ms all;
+  
+}
+
+
+.weaponbackgroundhover{
+  border:1px solid;
+  border-image : linear-gradient(-170deg, #008dff 10%, #af261c00 30%, #af261c00 65%,#008dff 100%) 10;
+
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 140, 255, 0.597));
+  transition:30ms all;
+}
+
+.weaponame {
+  position: absolute;
+  left: 29rem;
+  color: white;
+  width: 12rem;
+  top: 4rem;
+
+  text-align: end;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  z-index:4;
+}
+.weapontime {
+  position: absolute;
+  left: 29rem;
+  color: white;
+  width: 12rem;
+  top: 6rem;
+  text-align: end;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+    z-index:4;
+}
+.weaponlvl {
+  position: absolute;
+  left: 29rem;
+  color: white;
+  width: 12rem;
+  top: 8rem;
+  text-align: end;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+    z-index:4;
+}
+
+.weaponMargin{
+  position:absolute;
+
+   top:3rem;
+  left:3.5rem;
+  width:20rem;
+  height:9rem;
+  background-size:contain;
+  background-position:center center;
+  background-repeat:no-repeat;
+  
+  
+}
+.weaponMargin2{
+  position:absolute;
+
+   top:3rem;
+  left:3.5rem;
+  width:20rem;
+  height:9rem;
+  background-size:contain;
+  background-position:center center;
+  background-repeat:no-repeat;
+  
+  
+}
+
+
+.weaponimage {
+  position:absolute;
+  
+  top:-6rem;
+  left:11rem;
+
+  transform:scale(0.5);
+
+ 
+}
+
+
+.cratftext {
+  position: absolute;
+  font-size: 8rem;
+  top: 2.5rem;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.weaponname {
+  position: absolute;
+  font-size: 3rem;
+  top: 15.5rem;
+  width: 30rem;
+  text-align: start;
+  left: 58rem;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+}
+.playerxp {
+  position: absolute;
+  font-size: 3rem;
+  top: 13.5rem;
+  width: 30rem;
+  text-align: start;
+  left: 124rem;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+}
+
+.kalanxp {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 17.1rem;
+  width: 30rem;
+  text-align: start;
+  left: 124rem;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+}
+
+.playerxp span{
+  color:#008dff;
+}
+.kalanxp span{
+  color:#008dff;
+}
+.text1 {
+  position: absolute;
+  font-size: 2rem;
+  top: 56rem;
+  width: 30rem;
+  text-align: start;
+  left: 58rem;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+}
+.text2 {
+  position: absolute;
+  font-size: 2rem;
+  top: 56rem;
+  width: 50rem;
+  text-align: end;
+  left: 93.5rem;
+
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+}
+.yuzdeilerleme {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 50rem;
+  width: 10rem;
+  text-align: end;
+  left: 118.5rem;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  display: none;
+}
+.text3 {
+  position: absolute;
+  font-size: 2rem;
+  top: 59rem;
+  width: 50rem;
+  text-align: end;
+  left: 93.5rem;
+
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+}
+.text3 span {
+  color: #008dff;
+}
+
+.weaponcraftitemback {
+  position: absolute;
+  top: 21.5rem;
+  height: 33.5rem;
+  left: 58rem;
+}
+
+.showweapon {
+  position: absolute;
+  top: 21.5rem;
+  width: 85rem;
+  height: 33rem;
+
+  left: 58rem;
+}
+.showweapons {
+  position: absolute;
+  margin: auto auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 56.125rem;
+  max-height: 16.875rem;
+  transform:scale(1.3);
+}
+
+.buttontype {
+  position: absolute;
+  width: 44rem;
+  height: 4rem;
+  top: 14rem;
+  left: 0.8rem;
+  display:flex;
+  overflow-x:auto;
+  overflow-y:hidden;
+  align-items:center;
+  padding-bottom:.5rem;
+}
+.buttontype::-webkit-scrollbar-track {
+  height:3px;
+  border-radius: 10px;
+}
+
+.buttontype::-webkit-scrollbar {
+  height:3px;
+
+  width: 5px;
+}
+
+.buttontype::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #008dff;
+}
+
+.categoryButton{
+  
+  padding:0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  height: 3.5rem;
+  background-color: #193d4c;
+  line-height: 56px;
+  font-weight: 400;
+  margin-right:.75rem;
+  line-height: 55px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.ammocategory {
+  position: absolute;
+  width: 10rem;
+
+  font-size: 2rem;
+  text-align: center;
+  left: 11rem;
+  background-color: #193d4c;
+  color: white;
+  height: 3.5rem;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.toolscategory {
+  position: absolute;
+  width: 10rem;
+
+  font-size: 2rem;
+  text-align: center;
+  left: 22rem;
+  color: white;
+  background-color: #193d4c;
+  height: 3.5rem;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.attachmentcategory {
+  position: absolute;
+  width: 11rem;
+  background-color: #193d4c;
+  font-size: 2rem;
+  text-align: center;
+  left: 33rem;
+  color: white;
+  height: 3.5rem;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.gerekliItem {
+  position: relative;
+  width: 40rem;
+  height: 15rem;
+  left: 58rem;
+  top: 60rem;
+}
+
+.backweaponpng {
+  position: absolute;
+  width: 40rem;
+  height: 14.5rem;
+}
+
+.gerekliliste {
+  position: absolute;
+  width: 40rem;
+  height: 14.5rem;
+  background-color: transparent;
+  display: flex;
+  margin-left: 1rem;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.gerekliliste::-webkit-scrollbar-track {
+  max-height: 1%;
+  height: 1%;
+  border-radius: 10px;
+}
+
+.gerekliliste::-webkit-scrollbar {
+  width: 5px;
+  max-height: 1%;
+  height: 1%;
+}
+
+.gerekliliste::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  max-height: 1%;
+  height: 1%;
+  background-color: #008dff;
+}
+.items {
+  position: relative;
+  width: 17rem;
+  height: 4.5rem;
+  left: 1rem;
+  top: 1rem;
+}
+
+.gerekliItempng {
+  position: absolute;
+  top:0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.items h2 {
+  position: absolute;
+  color: white;
+  left: 4rem;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  line-height: 4.2rem;
+}
+
+.items h3 {
+  position: absolute;
+  color: white;
+  left: 12rem;
+  width: auto;
+  top: 0.5rem;
+  height: 3rem;
+  text-align: center;
+  border: 1px solid gray;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.startButton {
+  position: absolute;
+  color: white;
+  left: 125rem;
+  width: 15rem;
+  top: 65.5rem;
+  height: 3.5rem;
+
+  background-color: #008dff;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  line-height: 3rem;
+  font-size: 2rem;
+  box-shadow: 1px 1px 25px 5px #008cff9d;
+  filter: drop-shadow(0 0 5px #2277fa);
+  line-height: 3.6rem;
+}
+
+.awaitingButton {
+  position: absolute;
+  color: white;
+  left: 125rem;
+  width: 15rem;
+  top: 70.5rem;
+  height: 3.5rem;
+
+  background-color: #008dff;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  line-height: 3rem;
+  font-size: 2rem;
+  box-shadow: 1px 1px 25px 5px #008cff9d;
+  filter: drop-shadow(0 0 5px #2277fa);
+  line-height: 3.6rem;
+}
+.claimButton {
+  position: absolute;
+  color: white;
+  left: 125rem;
+  width: 15rem;
+  top: 70.5rem;
+  height: 3.5rem;
+
+  background-color: #008dff;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  line-height: 3rem;
+  font-size: 2rem;
+  box-shadow: 1px 1px 25px 5px #008cff9d;
+  filter: drop-shadow(0 0 5px #2277fa);
+  line-height: 3.6rem;
+  display: none;
+}
+
+/* .progressBars {
+  position: absolute;
+  top: 54.5rem;
+  left: 77rem;
+  display: flex;
+  align-items: center;
+
+} */
+
+.sure{
+  position: absolute;
+  top: 54.5rem;
+  left: 77rem;
+  display: flex;
+  color:white;
+  font-size: 2rem;
+  align-items: center;
+}
+
+/* .progressBar {
+  margin-right:.75rem;
+  width: 68px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  transition:all .1s linear;
+}
+.progressBar.halffull{
+background: rgba(0, 141, 255, 0.7);
+}
+
+.progressBar.full{
+
+  background: #008dff;
+} */
+
+
+
+
+.weaponlist2 {
+  position: relative;
+  width: 44rem;
+  height: 13.5rem;
+
+  margin-top: 0.5rem;
+}
+
+.weaponame2 {
+  position: absolute;
+  left: 29rem;
+  color: white;
+  width: 12rem;
+  top: 4rem;
+
+  text-align: end;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  z-index:4;
+}
+.weapontime2 {
+  position: absolute;
+  left: 29rem;
+  color: white;
+  width: 12rem;
+  top: 6rem;
+  text-align: end;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+    z-index:4;
+}
+.weaponlvl2 {
+  position: absolute;
+  left: 29rem;
+  color: white;
+  width: 12rem;
+  top: 8rem;
+  text-align: end;
+  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+    z-index:4;
+}
+
+.weaponimage2 {
+  position: relative;
+  top: -16rem;
+  left: -10rem;
+  transform: scale(0.4);
+}
+
+.weaponbackground2{
+  position: relative;
+  top: 1rem;
+  width: 46rem;
+  height: 13rem;
+  left: -1rem;
+  border:1px solid;
+  border-image : linear-gradient(-170deg, white 10%, #af261c00 30%, #af261c00 65%,white 100%) 10;
+  background-color: #193d4c5e;
+  transition:30ms all;
+  
+}
+
+.weaponbackgroundhover2{
+  border:1px solid;
+  border-image : linear-gradient(-170deg, #008dff 10%, #af261c00 30%, #af261c00 65%,#008dff 100%) 10;
+
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 140, 255, 0.597));
+  transition:30ms all;
+}
+
+.backpage{
+  position:absolute;
+  color:white;
+  top:12rem;
+  left:1rem;
+  border:1px solid #008dff;
+  width:20rem;
+  background-color:#008dff;
+  text-align:center;
+  font-size:1.8rem;
+  
+   font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+  display:none;
+}
+
+.notify-container{
+  position: absolute;
+  left: 2rem;
+  bottom: 25rem;
+}
+.notify{
+  width: 16rem;
+  position: relative;
+  margin-bottom: 3rem ;
+  min-height: 3.5rem;
+}
+
+.top-line{
+  position: absolute;
+  left: -0.5rem;
+  top:-0.5rem;
+
+  width:10.063rem;
+  height: 0.875rem;
+}
+.notify-title{
+
+
+position: absolute;
+ color :white;
+ z-index:2;
+ font-weight: 700;
+ font-family: "Rajdhani", sans-serif;
+font-size: 1.2rem;
+
+left:0rem;
+top:-1.4rem;
+}
+
+.notify-text{
+padding:.5rem;
+ color :white;
+ font-weight: 700;
+ font-family: "Rajdhani", sans-serif;
+width: 65%;
+
+margin-left: -0.5rem;
+font-size: 0.9rem;
+
+}
+
+.notify-dots-succes{
+  position: absolute;
+  right: 2rem;
+  top:10%;
+  background-image:url('./images/notfiysucc.png');
+  width: 14.813rem;
+  height: 4.75rem;
+    background-repeat: no-repeat;
+      background-size: cover;
+  transform: translateY(-50%);
+}
+.notify-dots-error{
+  position: absolute;
+  right: 2rem;
+  top:10%;
+  background-image:url('./images/notifyerror.png');
+  width: 14.813rem;
+  height: 4.75rem;
+    background-repeat: no-repeat;
+      background-size: cover;
+  transform: translateY(-50%);
+}
+
+
+
+#progressbar{
+  position: absolute;
+  width: 32%;
+  height: 1.5rem;
+top:64.2rem;
+left:85rem;
+background-color:#33484f;
+}
+
+.ply-weight-prog{
+  position:relative;
+  width:0%;
+  height:99%;
+  background-color:#008dff;
+}
+
+
+.progressbarcontainer{
+  position:relative;
+
+  width:5.5rem;
+  height:5rem;
+  top:23.5rem;
+  left:128rem;
+}
+
+#progressbarcircle {
+  position:absolute;
+
+  width: 5rem;
+  height: 5rem;
+  z-index:10;
+}
+
+

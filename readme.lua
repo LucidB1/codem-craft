@@ -1,0 +1,22 @@
+ Thank you as CODEM for purchasing the script before starting the process.
+
+
+ 
+
+ CREATE TABLE IF NOT EXISTS `codem_craft` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `identifier` varchar(50) DEFAULT NULL,
+    `weaponname` varchar(50) DEFAULT NULL,
+    `weapontime` varchar(50) DEFAULT NULL,
+    `weaponlabel` varchar(50) DEFAULT NULL,
+    `itemtime` varchar(50) DEFAULT NULL,
+    `images` varchar(50) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=171 DEFAULT CHARSET=utf8mb4;
+
+
+
+
+
+ALTER TABLE `users`
+ADD COLUMN `carftxp` INT NULL DEFAULT 0 ;
