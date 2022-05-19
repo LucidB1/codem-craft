@@ -20,5 +20,5 @@ Altered to Work With ESX Infinity
 
 
 ALTER TABLE `users`
-ADD COLUMN `carftxp` INT NULL DEFAULT 0 ;
+ADD COLUMN `crafttxp` INT NULL DEFAULT 0 ;
 ```
