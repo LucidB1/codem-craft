@@ -418,7 +418,7 @@ const GetAmountDataByName = (name) => {
 };
 
 const GetAmountDataByName2 = (name) => {
-  if (framework == 'esx'){
+  if (framework == 'esx' || framework == 'infinity'){
     let count = 0
     let data = playerinv.filter((item) =>{
       if (item){

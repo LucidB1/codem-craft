@@ -1,10 +1,10 @@
 Config = {}
 
 
-Config.frameworkObject = "newqb" -- newqb, oldqb, esx
+Config.frameworkObject = "infinity" -- newqb, oldqb, esx, infinity
 Config.Mysql = "oxmysql" -- mysql-async -- oxmysql
 Config.SetCraftXpCommand = 'setxp' -- example = setxp id xp  = setxp 2 5
-Config.AdminPerm = 'superadmin' --- admin rank
+Config.AdminPerm = 'admin' --- admin rank
 Config.Craft = {
     {npcHash = 's_m_m_ammucountry' ,coords = vector3(2306.89, 4881.82, 41.8082) , npcHeading = 31.91}
 }
