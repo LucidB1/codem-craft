@@ -1,9 +1,10 @@
 # CodeM Crafting
 
-Altered to Work With ESX Infinity
+Beautiful Crafting System for ESX and QBcore
 
+[Preview](https://streamable.com/ii9wao)
+ 
 ```sql
-
  CREATE TABLE IF NOT EXISTS `codem_craft` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `identifier` varchar(50) DEFAULT NULL,
