@@ -6,6 +6,11 @@ function GetFrameworkObject()
             Citizen.Wait(0)
         end
     end
+
+    if Config.frameworkObject == "infinity" then
+        object = exports["esx_infinity"]:GetObject()
+    end
+
     if Config.frameworkObject == "newqb" then
         object = exports["qb-core"]:GetCoreObject()
     end

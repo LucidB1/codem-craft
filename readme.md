@@ -1,4 +1,5 @@
 # CodeM Crafting
+
 Beautiful Crafting System for ESX and QBcore
 
 [Preview](https://streamable.com/ii9wao)
@@ -20,5 +21,5 @@ Beautiful Crafting System for ESX and QBcore
 
 
 ALTER TABLE `users`
-ADD COLUMN `carftxp` INT NULL DEFAULT 0 ;
+ADD COLUMN `crafttxp` INT NULL DEFAULT 0 ;
 ```

@@ -26,12 +26,6 @@ dependencies {
 	'/onesync',
 }
 
-escrow_ignore {
-	'config.lua',
-	'GetFrameworkObject.lua',
-	
-}
-
 client_scripts {
 	'GetFrameworkObject.lua',
 	'client/*.lua',
