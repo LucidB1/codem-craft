@@ -57,6 +57,26 @@ Citizen.CreateThread(function()
             end
             Citizen.Wait(sleep)
         end
+    elseif Config.frameworkObject == 'infinity' then
+        while true do
+            local sleep = 2000
+            local ped = PlayerPedId()
+            for k,v in pairs(Config.Craft) do
+                local Distance = #(GetEntityCoords(ped)- v.coords) 
+                if Distance <= 3.0 then
+                    sleep  = 0 
+                    frameworkObject.TextUI("[E] CRAFT")
+                    if IsControlJustReleased(0, 38) then
+                        PlayerData = frameworkObject.PlayerData
+                        frameworkObject.Request('codem-craft:getxP', function(xp,time)
+                            openUI(xp,time,PlayerData)
+                        end)
+                    end
+
+                end
+            end
+            Citizen.Wait(sleep)
+        end
     else 
         while true do
             local sleep = 2000
@@ -92,6 +112,19 @@ function openUI(xp,time,PlayerData)
         sunucusaati = time,
         playerinventory = PlayerData.inventory,
         framework = 'esx'
+    })
+end
+
+function openUI3(xp,time,PlayerData)
+    SetNuiFocus(true,true)
+    SendNUIMessage({
+        type = "SET_DATA",
+        data = Config.CraftItem,
+        categories = Config.Categories,
+        xp = xp,
+        sunucusaati = time,
+        playerinventory = PlayerData.inventory,
+        framework = 'infinity'
     })
 end
 
@@ -133,6 +166,8 @@ RegisterNUICallback('getAwating', function(data,cb)
   
     if Config.frameworkObject == 'esx' then 
         getData()
+    elseif Config.frameworkObject == 'infinity' then
+        getData3()
     else 
         getData2()
     end
@@ -148,6 +183,17 @@ function getData()
     end)
 end
 
+function getData3()
+    frameworkObject.Request('codem-craft:getData', function(data)
+            
+        SendNUIMessage({
+            type = "AWAITING_DATA",
+            sqldata = data
+        })
+    end)
+end
+
+
 function getData2()
     frameworkObject.Functions.TriggerCallback('codem-craft:getData', function(data)
        
@@ -157,12 +203,14 @@ function getData2()
         })
     end)
 end
+
 RegisterNetEvent('codem-craft:refreshPageAwating')
 AddEventHandler('codem-craft:refreshPageAwating', function()
     if Config.frameworkObject == 'esx' then 
-    getData()
+        getData()
+    elseif Config.frameworkObject == 'infinity' then
+        getData3()
     else 
-
         getData2()
     end
 end)

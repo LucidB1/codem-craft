@@ -1,7 +1,8 @@
- Thank you as CODEM for purchasing the script before starting the process.
+# CodeM Crafting
 
+Altered to Work With ESX Infinity
 
- 
+```sql
 
  CREATE TABLE IF NOT EXISTS `codem_craft` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -19,4 +20,5 @@
 
 
 ALTER TABLE `users`
-ADD COLUMN `carftxp` INT NULL DEFAULT 0 ;
+ADD COLUMN `crafttxp` INT NULL DEFAULT 0 ;
+```
