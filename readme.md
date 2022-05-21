@@ -21,5 +21,5 @@ Beautiful Crafting System for ESX and QBcore
 
 
 ALTER TABLE `users`
-ADD COLUMN `crafttxp` INT NULL DEFAULT 0 ;
+ADD COLUMN `craftxp` INT NULL DEFAULT 0 ;
 ```
